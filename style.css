@@ -1,0 +1,1142 @@
+@charset "UTF-8";
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.clearfix::after {
+    display: block;
+    content: "";
+    clear: both;
+}
+
+img {
+    vertical-align: bottom;
+}
+
+/* 共通の設定 */
+body {
+    font-family: "ヒラギノ角ゴ ProN W3", sans-serif;
+    color: #5A5A5A;
+    font: "Lucida Grande", "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "メイリオ", Meiryo, sans-serif;
+}
+
+.wrap {
+    width: 90%;
+    padding: 0 30px;
+    margin: 0 auto;
+}
+
+.maincontainer {
+    width: 90%;
+    margin: 0 auto;
+}
+
+section {
+    margin-bottom: 100px;
+    text-align: center;
+}
+
+h2 {
+    color: rgb(58, 171, 210);
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+h3 {
+    margin-bottom: 20px;
+    color: #00008b;
+}
+
+h4 {
+    margin: 10px 0;
+    background-color: rgb(58, 171, 210);
+    color: #fff;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style-type: none;
+}
+
+.title_text {
+    text-align: center;
+    margin-bottom: 40px;
+
+}
+
+.h3_text {
+    color: rgb(58, 171, 210);
+    font-size: 1.2em;
+}
+
+.detail_explanation {
+    width: 90%;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: justify;
+    text-justify: inter-ideograph;
+}
+
+.maincontainer img {
+    border-radius: 20px;
+}
+
+/* ヘッダーの設定 */
+header {
+    margin-bottom: 10px;
+    border-bottom: 1px solid rgb(58, 171, 210);
+}
+
+.page_top {
+    width: 90%;
+    margin-right: auto;
+    margin-left: auto;
+
+}
+
+.clinic_name {
+    width: 70%;
+}
+
+.clinic_name h1 {
+    text-align: left;
+    color: rgb(58, 171, 210);
+}
+
+.clinic_name p {
+    font-size: 14px;
+}
+
+h1 {
+    margin: 0;
+    line-height: bottom;
+    font-size: 18px;
+}
+
+h1 a {
+    color: rgb(58, 171, 210);
+}
+
+h1 a:link {
+    color: rgb(58, 171, 210);
+}
+
+.page_top {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 10px;
+    margin-bottom: 5px;
+}
+
+.information {
+    text-align: right;
+    width: 30%;
+}
+
+.information_text {
+    font-size: 12px;
+    text-align: center;
+}
+
+.tel_web {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    height: 40px;
+}
+
+.icon {
+    padding: 5px;
+    width: calc(50% - 10px);
+    margin-right: 10px;
+    margin-top: 5px;
+    background-color: #0000cd;
+    border-radius: 6px;
+    color: #fff;
+    font-size: 12px;
+    text-align: center;
+    height: 20px;
+    line-height: 20px;
+}
+
+.icon:last-child {
+    margin-right: 0;
+}
+
+.icon a {
+    color: #fff;
+    display: block;
+    display: flex;
+    flex: 1 1;
+    justify-content: center;
+}
+
+.icon:hover {
+    background-color: rgb(58, 171, 210);
+    color: #fff;
+}
+
+/* パンくずリストの設定 */
+.breadcrumb {
+    width: 90%;
+    height: 20px;
+    padding-left: 5%;
+    margin-bottom: 50px;
+    list-style-type: none;
+    display: flex;
+    color: #5A5A5A;
+    font-size: 14px;
+}
+
+.breadcrumb li::after {
+    content: ">";
+    margin: 10px;
+}
+
+.breadcrumb li:last-child::after {
+    content: none;
+}
+
+.breadcrumb li a {
+    color: #0000cd;
+}
+
+.breadcrumb li a:link {
+    color: #0000cd;
+}
+
+/* フッターの設定 */
+footer {
+    background-color: rgb(58, 171, 210);
+    color: #fff;
+    padding-top: 20px;
+}
+
+.footer_text {
+    text-align: center;
+}
+
+.footer_clinic_name {
+    font-size: 20px;
+}
+
+.doctor {
+    margin-bottom: 15px;
+}
+
+.footer_text address {
+    color: #5A5A5A;
+    font-size: 14px;
+
+}
+
+.footer_text .parking {
+    color: #5A5A5A;
+    font-size: 12px;
+    margin-bottom: 20px;
+}
+
+small {
+    display: block;
+    color: #fff;
+    text-align: center;
+    padding-bottom: 5px;
+}
+
+/* スライダーの設定*/
+.slider {
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+/* navの設定*/
+.navigation {
+    width: 90%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 100px;
+}
+
+.navigation li {
+    width: calc(50% - 10px);
+    padding: 3px;
+    margin-bottom: 10px;
+    background-color: rgb(58, 171, 210);
+    border-radius: 10px;
+    color: #fff;
+    font-size: 10px;
+}
+
+.navigation li a {
+    display: block;
+    display: flex;
+    flex: 1 1;
+    justify-content: center;
+    color: #fff
+}
+
+.navigation li a:link {
+    color: #fff;
+}
+
+.navigation li a:hover {
+    opacity: 0.5;
+    color: #0000cd;
+}
+
+/* maincontainerの設定 */
+.maincontainer {
+    width: 90%;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+/* トップページsectionの設定 */
+/* お知らせの設定 */
+
+.notice dl {
+    width: 60%;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.notice dt {
+    float: left;
+    margin-right: 30px;
+}
+
+.notice dd {
+    float: left;
+    text-align: left;
+}
+
+.notice_text {
+    margin-top: 10px;
+}
+
+/* 診療時間の設定 */
+table {
+    border: 2px solid #0000cd;
+    border-collapse: separate;
+    border-radius: 5px;
+    border-spacing: 0;
+    overflow: hidden;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+th {
+    font-size: 14px;
+    height: 40px;
+    border-right: 1px solid #fff;
+    border-bottom: 1px solid #0000cd;
+}
+
+th:last-child {
+    border-right: none;
+}
+
+td {
+    width: 8%;
+}
+
+
+tr:first-child {
+    background-color: #0000cd;
+    color: #fff;
+}
+
+td {
+    border-left: 1px solid #0000cd;
+    border-bottom: 1px solid #0000cd;
+}
+
+/* 診療科目の設定 */
+.medical_department_items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.medical_department_items li {
+    margin-bottom: 50px;
+}
+
+.medical_department_items a {
+    display: block;
+    border: 2px solid rgb(58, 171, 210);
+    border-radius: 50%;
+    padding: 50px 0;
+    margin-bottom: 30px;
+    font-size: 16px;
+    color: rgb(58, 171, 210);
+    font-weight: bold;
+}
+
+.medical_department_items a:link {
+    color: rgb(58, 171, 210);
+}
+
+.medical_department_items a:hover {
+    color: #fff;
+    background-color: rgb(58, 171, 210);
+    border: 2px solid #fff;
+}
+
+.medical_department_item {
+    width: calc(50% - 10px);
+}
+
+/* クリニックの特長の設定 */
+.features p {
+    margin-bottom: 20px;
+
+}
+
+.features img {
+    width: 100%;
+}
+
+.feature_item {
+    width: 100%;
+    margin-bottom: 50px;
+}
+
+/* アクセスの設定 */
+
+
+.access_detail {
+    margin-bottom: 30px;
+}
+
+.access_detail p {
+    margin: 10px;
+}
+
+address {
+    font-size: 1.2em;
+}
+
+.access_detail address {
+    color: #111;
+    font-size: 1.2em;
+}
+
+.station {
+    color: #111;
+    font-size: 1.3em;
+    font-weight: bold;
+}
+
+.access_detail span {
+    border-bottom: 1px solid #0000cd;
+    font-weight: bold;
+}
+
+/* ご予約・お問い合わせの設定 */
+.form {
+    display: flex;
+    justify-content: space-around;
+
+}
+
+.form p {
+    font-size: 14px;
+}
+
+.form a {
+    background-color: #00008b;
+    color: #fff;
+}
+
+.form a:link {
+    background-color: #00008b;
+    color: #fff;
+}
+
+.form a:hover {
+    background-color: rgb(58, 171, 210);
+    color: #fff;
+}
+
+.tel,
+.web {
+    width: calc(50% - 10px);
+    border-radius: 10px;
+    margin-right: 20px;
+    padding: 10px;
+}
+
+.web {
+    margin-right: 0;
+}
+
+.tel span {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.web span {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+
+}
+
+.pc {
+    font-size: 12px;
+}
+
+.Consultation_time img {
+    width: 90%;
+    background-image: cover;
+}
+
+/* トップページへ戻るの設定 */
+.return_button p {
+    text-align: right;
+    margin-bottom: 30px;
+}
+
+.return_button a {
+    color: rgb(58, 171, 210);
+    width: 15%;
+    border: 1px solid rgb(58, 171, 210);
+    border-radius: 50%;
+    text-align: center;
+    padding: 10px;
+}
+
+.return_button a:link {
+    color: rgb(58, 171, 210);
+}
+
+.return_button a:hover {
+    color: #0000cd;
+    border: 1px solid #0000cd;
+}
+
+/* 診療時間・アクセスページの設定 */
+/* ページトップの写真 */
+.top_image img {
+    width: 100%;
+    margin-bottom: 50px;
+}
+
+/* 診療科目ページの設定 */
+.medical_department_parts {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    height: 110px;
+}
+
+.medical_department_parts h3 {
+    width: 50%;
+    margin-bottom: 0;
+    background-color: rgb(58, 171, 210);
+    line-height: 110px;
+    text-align: center;
+    color: #fff;
+    line-height: 110px;
+}
+
+.medical_department_parts p {
+    width: 50%;
+}
+
+.medical_department_parts p img {
+    width: 100%;
+    height: 100%;
+    border-radius: 0;
+}
+
+.medical_department_page_item {
+    margin-bottom: 50px;
+
+}
+
+/* .medical_department_parts h3:nth-child(odd) {
+    border-radius: 20px 0 0 20px;
+}
+
+.medical_department_parts h3:nth-child(2n) {
+    border-radius: 0 20px 20px 0;
+}
+ 
+
+.photo1 {
+    border-radius: 20px 0 0 20px;
+}*/
+
+
+/* 院内設備についてページの設定 */
+.facility_item {
+    margin-bottom: 50px;
+
+}
+
+.facility_item p img {
+    border-radius: 50%;
+    width: 50%;
+    height: 50%;
+    margin-bottom: 20px;
+}
+
+/* 院長・スタッフ紹介のページ */
+.director_parts {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    justify-content: space-between;
+    margin-bottom: 100px;
+}
+
+.director_parts dl {
+    width: 70%;
+    margin: 0 auto;
+}
+
+.doctor_tetail dl {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.director_parts dd,
+.doctor_tetail dd {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.director_parts dt,
+.director_parts dd,
+.doctor_tetail dt,
+.doctor_tetail dd {
+    text-align: left;
+}
+
+.director_parts img {
+    width: 50%;
+    margin: 30px 0;
+}
+
+.doctor {
+    display: flex;
+    justify-content: space-around;
+
+}
+
+.doctor_tetail {
+    width: 40%;
+    text-align: center;
+
+}
+
+.dental_hygienist {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: space-around;
+}
+
+.dental_hygienist_detail {
+    width: 40%;
+    margin-bottom: 30px;
+}
+
+.doctor img,
+.dental_hygienist img {
+    margin: 20px 0;
+    width: 90%;
+}
+
+.name {
+    font-size: 18px;
+}
+
+/* 治療費についてページの設定 */
+.medical_expenses_parts {
+    margin-bottom: 50px;
+}
+
+.cost table {
+    border: 2px solid rgb(58, 171, 210);
+    border-collapse: separate;
+    border-radius: 5px;
+    border-spacing: 0;
+    overflow: hidden;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.cost tr th {
+    border-right: 1px solid #fff;
+}
+
+.cost th:first-child {
+    width: 80%;
+}
+
+.cost td {
+    text-align: left;
+    text-indent: 0.5em;
+
+}
+
+.cost td:last-child {
+    text-align: right;
+    text-indent: 1em;
+    padding-right: 0.5em;
+
+}
+
+.cost th {
+    background-color: rgb(58, 171, 210);
+    color: #fff;
+    border: 1px solid rgb(58, 171, 210);
+}
+
+.cost td {
+    border: 1px solid rgb(58, 171, 210);
+}
+
+/* ご予約・お問い合わせページの設定 */
+.Consultation_time h2 {
+    margin-top: 50px;
+}
+
+.attention {
+    margin: 0 auto;
+}
+
+.attention dt {
+    margin-bottom: 10px;
+}
+
+.attention dd {
+    margin: 5px 0;
+    text-align: left;
+}
+
+
+form {
+    border: 1px solid rgb(58, 171, 210);
+    padding: 20px;
+    margin-top: 30px;
+}
+
+.contactform {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.contactform dl {
+    margin-bottom: 20px;
+    margin-top: 30px;
+}
+
+.contactform dt {
+    text-align: left;
+    margin-bottom: 10px;
+}
+
+.contactform dd {
+    margin-bottom: 20px;
+}
+
+textarea {
+    margin-top: 5px;
+    margin-bottom: 30px;
+    color: #5A5A5A;
+    width: 80%;
+}
+
+.time_zone dd {
+    text-align: left;
+
+}
+
+.must {
+    color: #d23939;
+}
+
+label {
+    display: block;
+    text-align: left;
+    padding-left: 20px;
+}
+
+.contact_eaplaination {
+    margin-bottom: 50px;
+    text-align: left;
+    margin-right: auto;
+    margin-left: auto;
+    width: 80%;
+}
+
+.contact_eaplaination p {
+    padding: 5px 0;
+}
+
+
+
+/* 480px以下の設定 */
+@media screen and (max-width:480px) {
+    #wrap {
+        width: 480px;
+    }
+
+    body,
+    form {
+        font-size: 14px;
+    }
+
+    .information_text {
+        font-size: 8px;
+
+    }
+
+    iframe {
+        width: 100%;
+
+    }
+}
+
+/* 481px以上の設定 */
+@media screen and (min-width:481px) {
+    #wrap {
+        width: 481px;
+    }
+
+    body,
+    form {
+        font-size: 18px;
+    }
+
+    /* headerの設定*/
+    h1 {
+        font-size: 24px;
+    }
+
+    .information_text {
+        font-size: 12px;
+    }
+
+    /* navの設定*/
+    .navigation li {
+        padding: 3px;
+        margin-bottom: 10px;
+        background-color: rgb(58, 171, 210);
+        border-radius: 10px;
+        color: #fff;
+        font-size: 14px;
+    }
+
+    .icon {
+        font-size: 16px;
+    }
+
+    /* 診療科目の設定*/
+    /* 診療時間の設定*/
+    .Consultation_time table {
+        width: 80%;
+    }
+
+    .Consultation_time tr th:first-child {
+        width: calc(30% - 12px);
+    }
+
+    /* 特長の設定*/
+    .feature_item {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .feature_item img {
+        width: 70%;
+    }
+
+    .feature_item p {
+        width: 50%;
+    }
+
+    /* 診療時間の設定 */
+    .Consultation_time table {
+        width: 500px;
+    }
+
+    .Consultation_time tr th:first-child {
+        width: calc(30% - 12px);
+    }
+
+    /* アクセスの設定*/
+    .access_map {
+        display: flex;
+        justify-content: center;
+    }
+
+
+    .access_detail {
+        margin-right: 20px;
+    }
+
+    iframe {
+        width: 80%;
+    }
+
+    /* 診療科目のページの設定*/
+    .medical_department_page_item {
+        display: flex;
+        flex-direction: column;
+        width: 400px;
+    }
+
+    .medical_department_page_item_pc_page {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+
+    }
+
+    .medical_department_page_item_pc_page h3 {
+        width: 50%
+    }
+
+    .medical_department_page_item_pc_page img {
+        width: 50%;
+    }
+
+    /* 院内設備ページの設定*/
+    .pcpage_facility_item {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    .facility_item {
+        width: 30%;
+    }
+
+    /* ご予約・お問い合わせページの設定*/
+    .form {
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    form {
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    /* 院長・スタッフ紹介のページの設定*/
+    .director img {
+        width: 20%;
+    }
+
+    .dental_hygienist_detail {
+        width: 20%;
+    }
+
+    .director_parts dl {
+        width: 40%;
+        margin: 0 auto;
+    }
+
+    .doctor_tetail {
+        width: 40%;
+        text-align: center;
+
+    }
+
+    /* 治療費についてページの設定 */
+    .medical_expenses {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .medical_expenses_parts {
+        width: 45%;
+    }
+
+    .cost {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    .cost table {
+        width: 500px;
+        margin: 0 auto;
+    }
+}
+
+/* PC 960px以上の設定 */
+@media screen and (min-width:960px) {
+    #wrap {
+        width: 960px;
+    }
+
+    body,
+    form {
+        font-size: 18px;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+
+    /* 共通の設定 */
+
+    h2 {
+        color: rgb(58, 171, 210);
+        margin-bottom: 50px;
+        text-align: center;
+    }
+
+    h3 {
+        margin-bottom: 50px;
+    }
+
+    h4 {
+        margin: 20px 0;
+        background-color: rgb(58, 171, 210);
+        color: #fff;
+    }
+
+    .title_text {
+        text-align: center;
+        margin-bottom: 50px;
+
+    }
+
+
+    .information_text {
+        font-size: 12px;
+    }
+
+    /* navの設定*/
+    .navigation li {
+        width: calc(30% - 10px);
+        padding: 3px;
+        margin-bottom: 10px;
+        background-color: rgb(58, 171, 210);
+        border-radius: 10px;
+        color: #fff;
+        font-size: 16px;
+    }
+
+    .icon {
+        font-size: 16px;
+    }
+
+    .Consultation_time table {
+        width: 80%;
+    }
+
+    /* 診療時間の設定*/
+    .Consultation_time table {
+        width: 600px;
+    }
+
+    /* 診療科目の設定*/
+    .medical_department_item {
+        width: calc(30% - 10px);
+    }
+
+    /* 特長の設定*/
+    .feature_item {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .feature_item img {
+        width: 70%;
+    }
+
+    .feature_item p {
+        width: 50%;
+    }
+
+    /* アクセスの設定*/
+    .access_detail {
+        width: 45%;
+    }
+
+    .map {
+        width: 45%;
+
+    }
+
+    /* 診療科目のページの設定*/
+    .medical_department_page_item {
+        display: flex;
+        flex-direction: column;
+        width: 450px;
+    }
+
+    .medical_department_page_item_pc_page {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+
+    }
+
+    .medical_department_page_item_pc_page h3 {
+        width: 50%
+    }
+
+    .medical_department_page_item_pc_page img {
+        width: 50%;
+    }
+
+    /* 院内設備ページの設定*/
+    .pcpage_facility_item {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    .facility_item {
+        width: 30%;
+    }
+
+    /* ご予約・お問い合わせページの設定*/
+
+    form {
+        margin-left: auto;
+        margin-right: auto;
+        padding: 30px 100px 50px;
+    }
+
+
+
+    .contactform dl {
+        margin-bottom: 30px;
+        margin-top: 30px;
+
+    }
+
+    .contactform dt {
+        margin-bottom: 20px;
+    }
+
+
+}
